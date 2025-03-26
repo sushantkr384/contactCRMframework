@@ -13,7 +13,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import com.comcast.crm.generic.MainUtility.ExcelUtility;
 import com.comcast.crm.generic.MainUtility.FileUtility;
 import com.comcast.crm.objectrepositoryUtility.ContactPage;
-import com.comcast.crm.objectrepositoryUtility.CreatingNewContact;
 import com.comcast.crm.objectrepositoryUtility.CreatingNewContactPage;
 import com.comcast.crm.objectrepositoryUtility.HomePage;
 import com.comcast.crm.objectrepositoryUtility.Login_Page;
@@ -61,7 +60,7 @@ public class Create_Contac_Module_Create_test {
 //		driver.findElement(By.name("user_password")).sendKeys(PASSWORD);
 //		driver.findElement(By.id("submitButton")).click();
 		Login_Page lp=new Login_Page(driver);
-		lp.loginToApp(URL, USERNAME, PASSWORD);
+		lp.loginToApp(USERNAME, PASSWORD);
 		
 //		lp.getUsernameEdt().sendKeys(USERNAME);
 //		lp.getPasswordEdt().sendKeys(PASSWORD);
